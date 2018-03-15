@@ -166,6 +166,7 @@ GameObject:
   - component: {fileID: 160231149}
   - component: {fileID: 160231148}
   - component: {fileID: 160231147}
+  - component: {fileID: 160231151}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -196,7 +197,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -206,8 +207,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 4.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -229,13 +230,26 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 160231146}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
+  m_LocalPosition: {x: 1, y: 15, z: -22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+--- !u!114 &160231151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 160231146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8292606c7d67b40dd897dc4cb31f6327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 644987622}
+  smoothing: 5
 --- !u!1 &644987616 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100078, guid: f1d84cc28597f5641a3d9cbc4df7e306, type: 3}
@@ -279,6 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ec45203ae7a1a54c9d02c355f983833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 6
 --- !u!82 &644987620
 AudioSource:
   m_ObjectHideFlags: 0
@@ -359,6 +374,10 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!4 &644987622 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400080, guid: f1d84cc28597f5641a3d9cbc4df7e306, type: 3}
+  m_PrefabInternal: {fileID: 1968540378}
 --- !u!1001 &1318698761
 Prefab:
   m_ObjectHideFlags: 0
